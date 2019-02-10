@@ -1,0 +1,122 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url("background.jpg");
+	background-color: black;
+	background-size: 100%;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	z-index: 0;
+	cursor: none;
+	margin: 0;
+}
+
+#light {
+	position: fixed;
+}
+
+#menu {
+	height: 100%;
+	right: 0;
+	left: auto;
+	position: fixed;
+}
+
+#toolbar {
+	display: flex;
+	vertical-align: bottom;
+	height: 100%;
+	width: 40px;
+	background-color: black;
+	float: right;
+	cursor: default;
+	z-index: 100;
+	box-shadow: 0px 10px 10px;
+}
+
+#toolbar img {
+	height: 25px;
+	width: 25px;
+	vertical-align: bottom;
+	margin: auto auto 12px;
+	opacity: .5;
+	webkit-transition: opacity .05s ease-in-out;
+	-moz-transition: opacity .05s ease-in-out;
+	-o-transition: opacity .05s ease-in-out;
+	transition: opacity .05s ease-out;
+}
+
+#toolbar img:hover {
+	cursor: pointer;
+	opacity: .75;
+	webkit-transition: opacity .05s ease-in-out;
+	-moz-transition: opacity .05s ease-in-out;
+	-o-transition: opacity .05s ease-in-out;
+	transition: opacity .05s ease-in-out;
+}
+
+.close {
+	display: none;
+	float: right;
+}
+
+.open {
+	width: 15%;
+	height: 100%;
+	float: right;
+	position: fixed;
+	margin-right: 30px;
+	cursor: default;
+	background-color: #141414;
+	border-radius: 15px;
+	z-index: 75;
+	-webkit-box-shadow: inset 0px 0px 25px 8px;
+    -moz-box-shadow: inset 0px 0px 25px 8px;
+    -o-box-shadow: inset 0px 0px 25px 8px;
+   	-ms-box-shadow: inset 0px 0px 25px 8px;
+    box-shadow: inset 0px 0px 25px 8px;
+}
+
+#inventory p {
+	margin: auto;
+	padding: 10px;
+}
+
+#inventory ul {
+	font-size: 16pt;
+	font-family: monospace;
+	font-weight: lighter;
+	color: #666666;
+	text-transform: capitalize;
+	text-align: center;
+	margin-left: -90px;
+	list-style: none;
+}
+
+#inventory li:active {
+	text-decoration: line-through;
+	color: #424242;
+	opacity: .75;
+}
+
+
+/*
+.toolbar {
+	height: 100%;
+	position: inherit;
+	cursor: default;
+}*/
+
+
+/*#dark {
+	width: 100%;
+	height: 100%;
+	margin-top: -8px;
+	position: absolute;
+	background-color: black;
+	background-position: 0px 0px;
+	z-index: 50;
+	opacity: .5;
+}*/
+
